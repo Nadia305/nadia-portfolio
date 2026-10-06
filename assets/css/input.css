@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #f3d5db;
+    --color-primary: #454545;
+    --color-secondary: #292927;
+    --font-manrop: "Manrope", sans-serif;
+    --font-colors: #text-rose-900;
+}
+
+@layer base {
+    body {
+        background-color: var(--color-background);
+        color: var(--color-primary);
+        font-family: var(--font-manrop);
+    }
+}
+
+@utility row {
+    @apply flex items-center justify-between gap-7 text-rose-900;
+}
+
+@utility nav-bar {
+    @apply text-sm font-medium hover:text-secondary hover:scale-[1.15] inline-block transition-all duration-300;
+}
+   
+@utility hero {
+    @apply text-center pt-8 pb-20 px-8
+           bg-background
+           text-rose-900
+           font-medium
+           transition-all
+           duration-300;
+}
+
+@utility hero-title {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+}
+@utility projects {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8 bg-background;
+   
+}
+@utility project1 {
+    @apply p-4 bg-background text-rose-900
+           transition-colors duration-300;
+
+    &:hover {
+        @apply bg-rose-900 text-white;
+    }
+
+    &:hover h3,
+    &:hover p {
+        @apply text-white;
+    }
+}
