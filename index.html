@@ -12,7 +12,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-   <header class="py-3 bw duration-200"> 
+   <header class="py-3 bg-background" >
+    <div class="container mx-auto px-8 "> 
+        <div class="flex items-center justify-between py-3 border-y-4 border-rose-900 p-6 rounded-md text-shadow-emerald-950 hover:shadow-xl bg-white
+            transition-shadow duration-200"> 
         <a href="./index.html" class="text-lg font-bold  text-rose-900" >
                 Nadia Mohamed
             </a>
@@ -37,102 +40,168 @@
                     Book a call
                 </a>
             </li>
-             </ul>g-background" >
-    <div class="container mx-auto px-8 "> 
-         <div class="flex items-center justify-between py-3 border-y-4 border-rose-900 p-6 rounded-md text-shadow-emerald-950 hover:shadow-xl bg-white
-            transition-shado
+             </ul>
         </div>
     </div>
     </header>
  <main>
     <section class="hero">
-      <div class="container mx-auto text-center ">
+      
+<!-- HERO SECTION -->
+<section class="px-6 py-10">
+
+    <div class="container mx-auto max-w-5xl bg-white rounded-2xl shadow-md px-6 py-12 text-center">
+
+        <!-- Profile Picture -->
         <img
-    src="./assets/imgs/final picture.png"
-    alt="Profile Picture"
-    width="150" height="200" class="rounded-full mx-auto mt-8"
-/>
-<h1 class="text-4xl font-bold mb-4 py-4 text-rose-900">
-    
-  I’m Nadia Mohamed, a Front-End Developer creating modern and user-friendly websites.
+            src="./assets/imgs/final picture.png"
+            alt="Nadia Mohamed"
+            class="w-40 h-40 object-cover rounded-full mx-auto mb-6 border-4 border-rose-100"
+        >
+
+        <!-- Name -->
+        <h1 class="text-3xl md:text-4xl font-bold text-rose-900 mb-2">
+            Hi, I'm Nadia Mohamed
         </h1>
-       <h2 class="text-2xl mb-8 py-3 max-w-4xl mx-auto text-rose-900">
-            I design and build responsive websites that combine clean layouts, intuitive user experiences, and modern web technologies to help businesses and individuals establish a strong online presence.
+
+        <!-- Job Title -->
+        <h2 class="text-xl md:text-2xl font-semibold text-rose-800 mb-5">
+            Front-End Developer
         </h2>
 
+        <!-- Description -->
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+            I build modern, responsive websites with clean design
+            and intuitive user experiences.
+        </p>
+
+        <!-- Buttons -->
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+
+            <a href="#projects"
+               class="inline-flex items-center gap-2 bg-rose-900 text-white px-6 py-3 rounded-full hover:bg-rose-800 transition-colors duration-300">
+                <i class="fa-solid fa-folder-open"></i>
+                View My Projects
+            </a>
+
+            <a href="./contact.html"
+               class="inline-flex items-center gap-2 border-2 border-rose-900 text-rose-900 px-6 py-3 rounded-full hover:bg-rose-50 transition-colors duration-300">
+                <i class="fa-solid fa-envelope"></i>
+                Contact Me
+            </a>
+
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-6">
+
+            <a href="https://www.linkedin.com/in/nadia-mohamed-68a1432a8"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="LinkedIn"
+               class="text-3xl text-rose-900 hover:text-rose-700 transition-colors duration-300">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/Nadia305"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="GitHub"
+               class="text-3xl text-rose-900 hover:text-rose-700 transition-colors duration-300">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
     </div>
-            <div class="icons flex gap-8 justify-center mt-8 ">
-    <a href="https://www.linkedin.com/in/nadia-mohamed-68a1432a8"
-       target="_blank"
-       class="text-4xl text-rose-900  transition-colors duration-300">
 
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/Nadia305" target="_blank" class="text-4xl text-rose-900  transition-colors duration-300">
-        <i class="fa-brands fa-github"></i>
-    </a>
-</div>
-   
+</section>
+
+
+<!-- MY PROJECTS SECTION -->
 <section id="projects" class="py-16 bg-background">
-    <div class="container mx-auto px-4">
 
-        <h2 class="text-3xl font-bold mb-8 text-center text-rose-900   ">
+    <div class="container mx-auto px-6">
+
+        <h2 class="text-3xl font-bold mb-10 text-center text-rose-900">
             My Projects
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
 
-            <!-- Project 1 -->
-            
-<!-- Project 1 -->
-<div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
+            <!-- Project 1: Smart Parking -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
 
-    <img src="./assets/imgs/project 1.png"
-         alt="Smart Parking"
-         class="w-full h-48 object-cover">
+                <img
+                    src="./assets/imgs/project 1.png"
+                    alt="Smart Parking Application"
+                    class="w-full h-52 object-cover"
+                >
 
-    <div class="project1 flex-1">
+                <div class="p-6 flex flex-col flex-1">
 
-        <h3 class="text-xl font-semibold mb-2">
-            Smart Parking
-        </h3>
+                    <h3 class="text-xl font-bold mb-3 text-rose-900">
+                        Smart Parking
+                    </h3>
 
-        <p class="text-lg">
-            A smart parking application that uses image
-            processing to detect available and occupied
-            parking spaces, helping drivers find parking
-            quickly and easily.
-        </p>
+                    <p class="text-gray-600 leading-relaxed mb-6 flex-1">
+                        A smart parking application that uses image
+                        processing to detect available and occupied
+                        parking spaces, helping drivers find parking
+                        quickly and easily.
+                    </p>
+
+                    <a href="./projects.html"
+                       class="inline-flex items-center gap-2 font-semibold text-rose-900 hover:underline">
+                        View Project
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Project 2: E-Commerce Website -->
+            <div class="bg-white rounded-xl shadow-md overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
+
+                <img
+                    src="./assets/imgs/project2.png"
+                    alt="E-Commerce Website"
+                    class="w-full h-52 object-cover"
+                >
+
+                <div class="p-6 flex flex-col flex-1">
+
+                    <h3 class="text-xl font-bold mb-3 text-rose-900">
+                        E-Commerce Website
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed mb-6 flex-1">
+                        A responsive e-commerce website featuring
+                        modern layouts, product cards, and easy navigation.
+                    </p>
+
+                    <!-- Add project link when its detail page is ready -->
+                    <span class="text-sm font-medium text-gray-500">
+                        Project details coming soon
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
-</div>
-            <!-- Project 2 -->
-            
-<div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
 
-    <img src="./assets/imgs/project2.png"
-         alt="E-Commerce Website"
-         class="w-full h-48 object-cover">
-
-    <div class="project1 flex-1">
-
-        <h3 class="text-xl font-semibold mb-2">
-            E-Commerce Website
-        </h3>
-
-        <p class="text-lg">
-            A responsive e-commerce website featuring
-            modern layouts, product cards, and easy navigation.
-        </p>
-
-    </div>
-</div>
+</section>
 
         </div> <!-- End Grid -->
 
     </div> <!-- End Container -->
 </section>
-<section id="about"  bg-background">
+<section id="about" class="py-16 bg-background">
     <div class="container mx-auto px-8 "> 
 
         <h2 class="text-3xl font-bold text-center text-rose-900 mb-10">
@@ -154,10 +223,8 @@
 
 </div>
 </div>
-    </div>
 </section>
 
-    
 </main>
 
 </body>
